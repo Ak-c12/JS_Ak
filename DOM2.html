@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2nd level</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h2>learning DOM with chai aur code</h2>
+    <ul class="lang">
+        <li>javascript</li>
+    </ul>
+
+</body>
+<script>
+    function addlanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.lang').appendChild(li);
+    }
+    addlanguage("python")
+    addlanguage("java")
+
+    // Adding a new language option in a optimized way by using appendChild
+    // This is a more efficient way to add elements to the DOM
+
+    function addOptLang(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.lang').appendChild(li);
+    }
+    addOptLang("c++")
+
+    // Edit an existing element
+    const secondli = document.querySelector("li:nth-child(2)"); // nth is used in css to select nth element
+    // secondli.innerHTML = "javascript and typescript";
+    secondli.outerHTML = '<li>JS & TS </li>'; // outerHTML is used to replace the entire element with new HTML
+    const newli = document.createElement('li');
+    newli.textContent = "java and script";
+    // secondli.replaceWith(newli); // replaceWith is used to replace an element with another element
+
+    //remove
+    const lastlang = document.querySelector('li:last-child');
+    lastlang.remove(); // remove is used to remove an element from the DOM
+</script>
+
+</html>
