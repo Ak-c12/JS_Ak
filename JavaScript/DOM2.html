@@ -10,6 +10,7 @@
     <ul class="lang">
         <li>javascript</li>
     </ul>
+    <img id="firstImg"  src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1738/1631738-v-85d7d9e7dce7" alt="ops" style="width: 300px; height: 200px;">
 
 </body>
 <script>
@@ -42,6 +43,16 @@
     //remove
     const lastlang = document.querySelector('li:last-child');
     lastlang.remove(); // remove is used to remove an element from the DOM
+
+    document.getElementById('firstImg').addEventListener('click', function(){
+        alert("Image clicked!")
+    })
+
+    // types of event listeners
+    // type, timestamp, target, currentTarget, eventPhase, bubbles, cancelable, preventDefault, composed
+    //clientX, clientY, screenX, screenY, pageX, pageY, ctrlKey, shiftKey, altKey, metaKey, button, buttons, keycode, charCode, key, code, repeat, locale, detail, which
+
+
 </script>
 
 </html>

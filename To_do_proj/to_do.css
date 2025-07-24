@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+body{
+    background-color: #212121;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+}
+.heading_container h1{
+    font-size: 2.8rem;
+    margin-right: 10px;
+}
+.heading_container{
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.heading_container img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.input_container input{
+    width : 300px;
+    height: 40px;
+    border: 3px solid green;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.input_container input:hover{
+    border: 2px solid #fff;
+    outline: none;
+    box-shadow: 0 0 8px;
+    background-color: #f0f8f0;
+    transition: 0.5s;
+
+}
+.input_container{
+    height: 25px;
+    display: flex;
+    align-items:flex-start;
+    
+    gap: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.input_container button{
+    width: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: brown;
+    height: 40px;
+    border: 3px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input_container button:hover{
+    /* background-color: #fff;
+    color: #000;
+    border: 2px solid #fff; */
+    box-shadow: 0 0 10px;
+    transition: 0.8s;
+}
+.display_list{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:left; 
+
+}
+
